@@ -17,10 +17,10 @@ const applyLightTheme = () => {
         account.style.color = "white";
     }
 
-    const searchInput = document.querySelector(".search-input"); // Выбор элемента поискового поля
+    const searchInput = document.querySelector(".search-input");
     if (searchInput) {
-        searchInput.style.backgroundColor = "white"; // Цвет фона для светлой темы
-        searchInput.style.color = "black"; // Цвет текста для светлой темы
+        searchInput.style.backgroundColor = "white";
+        searchInput.style.color = "black";
     }
 
     const searchBtn = document.querySelector(".search-button");
@@ -57,10 +57,10 @@ const applyDarkTheme = () => {
         account.style.color = "black";
     }
 
-    const searchInput = document.querySelector(".search-input"); // Выбор элемента поискового поля
+    const searchInput = document.querySelector(".search-input");
     if (searchInput) {
-        searchInput.style.backgroundColor = "#666666"; // Цвет фона для темной темы
-        searchInput.style.color = "white"; // Цвет текста для темной темы
+        searchInput.style.backgroundColor = "#666666";
+        searchInput.style.color = "white";
     }
 
     const searchBtn = document.querySelector(".search-button");

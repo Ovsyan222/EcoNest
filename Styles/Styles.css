@@ -24,7 +24,7 @@ p {
     padding: 0;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .navbar li {
@@ -113,6 +113,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .block1 img {
@@ -125,7 +126,73 @@ p {
 .T1 {
     text-align: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 .footer {
     display: flex;
@@ -152,6 +219,7 @@ p {
     color: #ffffff;
     padding: 10px;
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .footer li button:hover {
