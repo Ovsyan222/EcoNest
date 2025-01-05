@@ -89,3 +89,13 @@ button.addEventListener("click", () => {
     }
     isDarkTheme = !isDarkTheme;
 });
+
+
+document.querySelector('.feedback-button').addEventListener('click', () => {
+    const feedText = document.querySelector(".feedback-input");
+    if (feedText === null || feedText.value.trim() === '') {
+        alert('Пожалуйста, введите ваш отзыв.');
+    } else {
+        alert('Ваш отзыв отправлен!');
+    }
+});
