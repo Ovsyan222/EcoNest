@@ -22,9 +22,27 @@
                     <button type="submit" class="search-button">Поиск</button>
                 </form>
             </li>
-            <li><a href="#" class="account">Личный кабинет</a></li>
+            <li><button href="#" class="account">Личный кабинет</button></li>
         </ul>
     </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Регистрация</h1>
+            <label>Фото</label>
+            <input type="file" class="photo">
+            <label>Имя</label>
+            <input id="modalInput" class="input" type="text" placeholder="Имя">
+            <label>Фамилия</label>
+            <input id="modalInput" class="input" type="text" placeholder="Фамилия">
+            <label>Ваша почта</label>
+            <input id="modalInput" class="input" type="text" placeholder="email">
+            <label>Ваш пароль</label>
+            <input id="modalInput" class="input" type="text" placeholder="пароль">
+            <button id="modalButton">Закрыть</button>
+        </div>
+    </div>
 
     <main>
         <div class="block1">

@@ -23,6 +23,18 @@ const applyLightTheme = () => {
         searchInput.style.color = "black";
     }
 
+    const modalContent = document.querySelector(".modal-content");
+    if (modalContent) {
+        modalContent.style.backgroundColor = "white";
+        modalContent.style.color = "#444444";
+    }
+
+    const modalButton = document.getElementById("modalButton");
+    if (modalButton) {
+        modalButton.style.backgroundColor = "coral";
+        modalButton.style.color = "#ffffff";
+    }
+
     const searchBtn = document.querySelector(".search-button");
     if (searchBtn) {
         searchBtn.style.backgroundColor = "coral";
@@ -33,6 +45,18 @@ const applyLightTheme = () => {
     if (btnTheme) {
         btnTheme.style.backgroundColor = "coral";
         btnTheme.style.color = "white";
+    }
+
+    const feed = document.querySelector(".feedback");
+    if (feed) {
+        feed.style.backgroundColor = "white";
+        feed.style.color = "black";
+    }
+
+    const feedBtn = document.querySelector(".feedback-button");
+    if (feedBtn) {
+        feedBtn.style.backgroundColor = "coral";
+        feedBtn.style.color = "white";
     }
 
     document.querySelectorAll(".navbar").forEach(element => {
@@ -63,6 +87,18 @@ const applyDarkTheme = () => {
         searchInput.style.color = "white";
     }
 
+    const modalContent = document.querySelector(".modal-content");
+    if (modalContent) {
+        modalContent.style.backgroundColor = "gray";
+        modalContent.style.color = "#ffffff";
+    }
+
+    const modalButton = document.getElementById("modalButton");
+    if (modalButton) {
+        modalButton.style.backgroundColor = "white";
+        modalButton.style.color = "black";
+    }
+
     const searchBtn = document.querySelector(".search-button");
     if (searchBtn) {
         searchBtn.style.backgroundColor = "white";
@@ -73,6 +109,18 @@ const applyDarkTheme = () => {
     if (btnTheme) {
         btnTheme.style.backgroundColor = "white";
         btnTheme.style.color = "black";
+    }
+
+    const feed = document.querySelector(".feedback");
+    if (feed) {
+        feed.style.backgroundColor = "gray";
+        feed.style.color = "white";
+    }
+
+    const feedBtn = document.querySelector(".feedback-button");
+    if (feedBtn) {
+        feedBtn.style.backgroundColor = "white";
+        feedBtn.style.color = "black";
     }
 
     document.querySelectorAll(".navbar").forEach(element => {
@@ -99,3 +147,30 @@ document.querySelector('.feedback-button').addEventListener('click', () => {
         alert('Ваш отзыв отправлен!');
     }
 });
+
+const modal = document.getElementById("myModal");
+const openModalButton = document.querySelector(".account");
+const closeModalButton = document.querySelector(".close-button");
+const modalButton = document.getElementById("modalButton");
+
+// Функция для открытия модального окна
+openModalButton.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Функция для закрытия модального окна
+closeModalButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрытие модального окна при нажатии на кнопку в модальном окне
+modalButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрытие модального окна при клике вне его области
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
