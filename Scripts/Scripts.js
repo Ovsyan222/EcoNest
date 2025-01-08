@@ -153,22 +153,18 @@ const openModalButton = document.querySelector(".account");
 const closeModalButton = document.querySelector(".close-button");
 const modalButton = document.getElementById("modalButton");
 
-// Функция для открытия модального окна
 openModalButton.onclick = function() {
     modal.style.display = "block";
 }
 
-// Функция для закрытия модального окна
 closeModalButton.onclick = function() {
     modal.style.display = "none";
 }
 
-// Закрытие модального окна при нажатии на кнопку в модальном окне
 modalButton.onclick = function() {
     modal.style.display = "none";
 }
 
-// Закрытие модального окна при клике вне его области
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
